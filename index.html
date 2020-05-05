@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Own JLA Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+    <header>
+
+        <h1 id="title">JUSTICE LEAGUE OF AMERICA MEMBERSHIP APPLICATION</h1>
+        <p id="description">OFFICIAL SUBMISSION FORM TO JOIN THE JUSTICE LEAGUE OF AMERICA</p>
+
+    </header>
+
+
+    <main>
+
+
+
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">Real Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your real name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="super-name">Superhero Name</label>
+                <input type="text" name="super-name" id="super-name" placeholder="Enter your superhero name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age <span class="optional">(Optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" placeholder="Enter your age" />
+            </div>
+
+            <div class="form-group">
+                <p>Which best decribes how you received your powers?</p>
+                <select id="dropdown" name="power-source" required>
+                    <option disabled selected value>Select power source</option>
+                    <option value="radioactive">Radioactive Material</option>
+                    <option value="magic-hammer">Magic Hammer</option>
+                    <option value="last-survivor">Last Survivor of Exploding Planet</option>
+                    <option value="armor">High Tech Armor</option>
+                    <option value="deadparents">Dead Parents</option>
+                    <option value="othersource">Other (please list at end of form)</option>
+                </select>
+            </div>
+
+            <div class="form-group input-radio">
+                <p>Would you kill a villain?</p>
+                <input type="radio" id="yes" name="kill" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="kill" value="no">
+                <label for="no">No</label>
+                <input type="radio" id="joker" name="kill" value="joker">
+                <label for="joker">Just the Joker</label>
+            </div>
+
+            <div class="form-group">
+                <p>How do you see your role on the team?</p>
+                <select id="dropdown" name="role" required>
+                    <option disabled selected value>Select role</option>
+                    <option value="leader">Leader</option>
+                    <option value="muscle">Muscle</option>
+                    <option value="brains">Brains</option>
+                    <option value="power">Power</option>
+                    <option value="looks">Looks</option>
+                    <option value="donuts">Will make donut runs</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What power<span class="optional">(</span>s<span class="optional">)</span> do you have?</p>
+                <input type="checkbox" id="power1" name="power1" value="flight">
+                <label for="power1">Flight</label>
+                <input type="checkbox" id="power2" name="power2" value="strength">
+                <label for="power2">Super strength</label>
+                <input type="checkbox" id="power3" name="power3" value="superspeed">
+                <label for="power3">Super speed</label>
+                <input type="checkbox" id="power4" name="power4" value="energy">
+                <label for="power4">Energy blasts</label>
+                <input type="checkbox" id="power5" name="power5" value="invisibility">
+                <label for="power5">Invisibility</label>
+                <input type="checkbox" id="power5" name="power5" value="rich">
+                <label for="power5">Rich</label>
+                <input type="checkbox" id="power6" name="power6" value="otherpower">
+                <label for="power6">Other <span class="optional">(</span>please list below<span class="optional">)</span></label>
+            </div>
+
+            <div class="form-group">
+                <p>Please list any powers or sources of powers that were not in the above lists:</p>
+                <textarea class="input-text-area" name="addpowerinfo" id="addpowerinfo" placeholder="Enter additional info here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">SUBMIT</button>
+            </div>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
