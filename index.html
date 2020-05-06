@@ -12,10 +12,7 @@
 
 </head>
 
-
-
 <body>
-
 
     <header>
 
@@ -24,10 +21,7 @@
 
     </header>
 
-
     <main>
-
-
 
         <form id="survey-form">
 
@@ -66,12 +60,12 @@
 
             <div class="form-group input-radio">
                 <p>Would you kill a villain?</p>
-                <input type="radio" id="yes" name="kill" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="kill" value="no">
-                <label for="no">No</label>
-                <input type="radio" id="joker" name="kill" value="joker">
-                <label for="joker">Just the Joker</label>
+                <label><input type="radio" id="yes" name="kill" value="yes">
+                    Yes</label>
+                <label><input type="radio" id="no" name="kill" value="no">
+                    No</label>
+                <label><input type="radio" id="joker" name="kill" value="joker">
+                    Just the Joker</label>
             </div>
 
             <div class="form-group">
@@ -87,27 +81,29 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group input-checkbox">
                 <p>What power<span class="optional">(</span>s<span class="optional">)</span> do you have?</p>
-                <input type="checkbox" id="power1" name="power1" value="flight">
-                <label for="power1">Flight</label>
-                <input type="checkbox" id="power2" name="power2" value="strength">
-                <label for="power2">Super strength</label>
-                <input type="checkbox" id="power3" name="power3" value="superspeed">
-                <label for="power3">Super speed</label>
-                <input type="checkbox" id="power4" name="power4" value="energy">
-                <label for="power4">Energy blasts</label>
-                <input type="checkbox" id="power5" name="power5" value="invisibility">
-                <label for="power5">Invisibility</label>
-                <input type="checkbox" id="power5" name="power5" value="rich">
-                <label for="power5">Rich</label>
-                <input type="checkbox" id="power6" name="power6" value="otherpower">
-                <label for="power6">Other <span class="optional">(</span>please list below<span class="optional">)</span></label>
+
+                <label><input type="checkbox" id="power1" name="power1" value="flight">
+                    Flight</label>
+                <label><input type="checkbox" id="power2" name="power2" value="strength">
+                    Super strength</label>
+                <label><input type="checkbox" id="power3" name="power3" value="superspeed">
+                    Super speed</label>
+                <label><input type="checkbox" id="power4" name="power4" value="energy">
+                    Energy blasts</label>
+                <label><input type="checkbox" id="power5" name="power5" value="invisibility">
+                    Invisibility</label>
+                <label><input type="checkbox" id="power5" name="power5" value="rich">
+                    Rich</label>
+                <label><input type="checkbox" id="power6" name="power6" value="otherpower">
+                    Other <span class="optional">(</span>please list below<span class="optional">)</span></label>
             </div>
 
             <div class="form-group">
                 <p>Please list any powers or sources of powers that were not in the above lists:</p>
-                <textarea class="input-text-area" name="addpowerinfo" id="addpowerinfo" placeholder="Enter additional info here..."></textarea>
+                <textarea class="input-text-area" name="addpowerinfo" id="addpowerinfo"
+                    placeholder="Enter additional info here..."></textarea>
             </div>
 
             <div class="form-group">
@@ -117,7 +113,6 @@
         </form>
 
     </main>
-
 
 </body>
 

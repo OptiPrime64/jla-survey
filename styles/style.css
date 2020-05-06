@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     margin: 0;
 }
 
@@ -29,6 +30,7 @@ header p {
 h1, header p {
     margin: auto;
 }
+
 
 main {
     font-family: 'Poppins', sans-serif;
@@ -59,6 +61,7 @@ input[type=radio], input[type=checkbox] {
     position: relative;
     top: 1px;
     margin-right: 0;
+    margin-top: 8px;
 }
 
 .form-group {
@@ -85,6 +88,16 @@ input[type=radio], input[type=checkbox] {
     margin-top: 11px;
 }
 
+.input-radio label {
+    display: block;
+    line-height: 1;
+}
+
+.input-checkbox label {
+    display: block;
+    line-height: 1;
+}
+
 .submit-button {
     display: block;
     padding: 5px;
@@ -98,3 +111,21 @@ input[type=radio], input[type=checkbox] {
 
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 6vw;
+    }
+    header p {
+      
+        font-size: 2.4vw;
+    }
+
+    main {
+        margin: 30px 10px;
+    };
+
+
+}
